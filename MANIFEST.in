@@ -1,0 +1,8 @@
+# Only these sources and the build backend's generated metadata belong in an sdist.
+# In particular, do not pick up a local model, forecasts, or a returns file.
+global-exclude *
+include pyproject.toml MANIFEST.in README.md LICENSE
+include forecasteval/__init__.py forecasteval/__main__.py
+include forecasteval/data.py forecasteval/design.py forecasteval/descriptive.py
+include forecasteval/evaluation.py forecasteval/inference.py forecasteval/plugins.py
+include forecasteval/predictions.py forecasteval/scoring.py

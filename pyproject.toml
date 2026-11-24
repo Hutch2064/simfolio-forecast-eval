@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simfolio-forecasteval"
+version = "0.1.0"
+description = "Rolling-origin evaluation of probabilistic forecasts on caller-supplied returns"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = []
+
+[project.scripts]
+forecasteval = "forecasteval.__main__:main"
+
+[tool.setuptools]
+packages = ["forecasteval"]
+include-package-data = false
